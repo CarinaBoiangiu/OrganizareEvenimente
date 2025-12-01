@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS evenimente;
 CREATE TABLE evenimente (
                             id BIGINT NOT NULL AUTO_INCREMENT,
                             denumirea VARCHAR(25) NOT NULL,

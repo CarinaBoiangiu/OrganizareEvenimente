@@ -14,20 +14,21 @@ import java.time.LocalTime;
 @Table(name = "evenimente")
 public class Eveniment {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String denumirea;
-    private String locatia;
+    private String locatie;
     private LocalDate data;
-    private LocalTime timpul;
-    private float pretBilet;
+    private LocalTime timp;
+    private float pret;
 
-    public Eveniment(String denumirea, String  locatia, LocalDate data, LocalTime timpul, float pretul){
+
+    public Eveniment(String denumirea, String  locatie, LocalDate data, LocalTime timp, float pret){
         super();
         this.denumirea = denumirea;
-        this.locatia = locatia;
+        this.locatie = locatie;
         this.data = data;
-        this.timpul = timpul;
-        this.pretBilet = pretul;
+        this.timp = timp;
+        this.pret = pret;
     }
     public Eveniment(){}
 
